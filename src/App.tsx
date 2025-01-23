@@ -1,4 +1,4 @@
-import { AboutPage, HomePage, ProjectPage, SkillsPage } from "./router";
+import { AboutPage, ContactPage, ExperiencePage, HomePage, ProjectPage, SkillsPage, TestimonialPage } from "./router";
 
 const App = () => {
   return (
@@ -7,6 +7,9 @@ const App = () => {
       <SkillsPage />
       <AboutPage />
       <ProjectPage />
+      <ExperiencePage />
+      <TestimonialPage />
+      <ContactPage />
     </div>
   );
 };
