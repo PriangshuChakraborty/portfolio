@@ -18,7 +18,15 @@ const Navbar = () => {
               </div>
             ))}
         </div>
-        <button className=" text-white font-Lato font-bold rounded-[8px] bg-gradient-to-br from-[#FA6E00] to-[#E60026] px-[40px] py-[12px]">
+        <button
+          className=" text-white font-Lato font-bold rounded-[8px] bg-gradient-to-br from-[#FA6E00] to-[#E60026] px-[40px] py-[12px]"
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1kemqPGiiXlb8GUtWbQvN8v21WuS5J_k_/view?usp=sharing",
+              "_blank"
+            )
+          }
+        >
           Download CV
         </button>
       </div>

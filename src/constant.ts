@@ -8,7 +8,14 @@ import { SiRedux } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 
-export const navData = ["Home", "About", "Project", "Testimonial", "Contact"];
+export const navData = [
+  "Home",
+  "Skills",
+  "About",
+  "Projects",
+  "Experiences",
+  "Contact",
+];
 
 export const skillsData = [
   {
