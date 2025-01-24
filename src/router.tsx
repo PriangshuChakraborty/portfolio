@@ -5,6 +5,7 @@ import ProjectPage from "./pages/ProjectPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import TestimonialPage from "./pages/TestimonialPage";
 import ContactPage from "./pages/ContactPage";
+import FooterPage from "./pages/FooterPage";
 
 export {
   HomePage,
@@ -14,4 +15,5 @@ export {
   ExperiencePage,
   TestimonialPage,
   ContactPage,
+  FooterPage,
 };
