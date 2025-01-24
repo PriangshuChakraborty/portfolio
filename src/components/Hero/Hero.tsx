@@ -41,11 +41,13 @@ const Hero = () => {
             animate={{
               y: [0, -8, 0, 8, 0],
             }}
+            whileHover={{ scale: 1.1 }}
             transition={{
               duration: 4,
               repeat: Infinity,
               type: "tween",
               ease: "linear",
+              scale: { duration: 0.2 },
             }}
             className=" flex items-center justify-center h-[70px] w-[70px] rounded-full border-2 border-[#575757] bg-[rgba(255,255,255,0.04)] cursor-pointer"
             onClick={() =>
@@ -62,11 +64,13 @@ const Hero = () => {
             animate={{
               y: [-8, 0, 8, 0, -8],
             }}
+            whileHover={{ scale: 1.1 }}
             transition={{
               duration: 4,
               repeat: Infinity,
               type: "tween",
               ease: "linear",
+              scale: { duration: 0.2 },
             }}
             className=" flex items-center justify-center h-[70px] w-[70px] rounded-full border-2 border-[#575757] bg-[rgba(255,255,255,0.04)] cursor-pointer"
             onClick={() =>
@@ -80,11 +84,13 @@ const Hero = () => {
             animate={{
               y: [0, -8, 0, 8, 0],
             }}
+            whileHover={{ scale: 1.1 }}
             transition={{
               duration: 4,
               repeat: Infinity,
               type: "tween",
               ease: "linear",
+              scale: { duration: 0.2 },
             }}
             className=" flex items-center justify-center h-[70px] w-[70px] rounded-full border-2 border-[#575757] bg-[rgba(255,255,255,0.04)] cursor-pointer"
             onClick={() => window.open("https://x.com/Pri_code108", "_blank")}
@@ -96,11 +102,13 @@ const Hero = () => {
             animate={{
               y: [-8, 0, 8, 0, -8],
             }}
+            whileHover={{ scale: 1.1 }}
             transition={{
               duration: 4,
               repeat: Infinity,
               type: "tween",
               ease: "linear",
+              scale: { duration: 0.2 },
             }}
             className=" flex items-center justify-center h-[70px] w-[70px] rounded-full border-2 border-[#575757] bg-[rgba(255,255,255,0.04)] cursor-pointer"
             onClick={() =>
@@ -114,11 +122,26 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      <motion.div>
-        <img
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        whileHover={{ scale: 1.05 }}
+        style={{ display: "inline-block" }}
+      >
+        <motion.img
           src={heroImg}
           alt="hero image"
-          className=" object-contain h-[400px]"
+          className="object-contain h-[400px]"
+          animate={{
+            y: [0, -10, 0, 10, 0],
+            scale: [1, 1.05, 1], // Continuous floating effect
+          }}
+          transition={{
+            duration: 4, // Duration of the floating animation cycle
+            repeat: Infinity, // Repeats forever
+            ease: "linear", // Smooth easing for floating
+          }}
         />
       </motion.div>
     </div>
