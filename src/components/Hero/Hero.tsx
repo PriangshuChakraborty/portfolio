@@ -48,6 +48,12 @@ const Hero = () => {
               ease: "linear",
             }}
             className=" flex items-center justify-center h-[70px] w-[70px] rounded-full border-2 border-[#575757] bg-[rgba(255,255,255,0.04)] cursor-pointer"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/priangshu-chakraborty-4a94b3256/",
+                "_blank"
+              )
+            }
           >
             <CiLinkedin className=" text-[#BABABA] text-[43px]" />
           </motion.div>
@@ -63,6 +69,9 @@ const Hero = () => {
               ease: "linear",
             }}
             className=" flex items-center justify-center h-[70px] w-[70px] rounded-full border-2 border-[#575757] bg-[rgba(255,255,255,0.04)] cursor-pointer"
+            onClick={() =>
+              window.open("https://github.com/PriangshuChakraborty", "_blank")
+            }
           >
             <VscGithub className=" text-[#BABABA] text-[40px]" />
           </motion.div>
@@ -78,6 +87,7 @@ const Hero = () => {
               ease: "linear",
             }}
             className=" flex items-center justify-center h-[70px] w-[70px] rounded-full border-2 border-[#575757] bg-[rgba(255,255,255,0.04)] cursor-pointer"
+            onClick={() => window.open("https://x.com/Pri_code108", "_blank")}
           >
             <FaXTwitter className=" text-[#BABABA] text-[30px]" />
           </motion.div>
@@ -93,18 +103,24 @@ const Hero = () => {
               ease: "linear",
             }}
             className=" flex items-center justify-center h-[70px] w-[70px] rounded-full border-2 border-[#575757] bg-[rgba(255,255,255,0.04)] cursor-pointer"
+            onClick={() =>
+              window.open(
+                "https://mail.google.com/mail/?view=cm&to=cpriangshu@gmail.com",
+                "_blank"
+              )
+            }
           >
             <BiLogoGmail className=" text-[#BABABA] text-[37px]" />
           </motion.div>
         </div>
       </div>
-      <div>
+      <motion.div>
         <img
           src={heroImg}
           alt="hero image"
           className=" object-contain h-[400px]"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

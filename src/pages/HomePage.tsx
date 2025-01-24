@@ -4,7 +4,7 @@ import Navbar from "../components/Layout/Navbar"
 
 const HomePage = () => {
   return (
-    <div>
+    <div className=" select-none">
         <Navbar />
         <Hero/>
     </div>
