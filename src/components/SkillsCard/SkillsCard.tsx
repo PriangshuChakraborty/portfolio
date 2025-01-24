@@ -1,11 +1,11 @@
 import React from "react";
 
-interface SkillsCardProps {
+interface ISkillsCard {
   title: string;
   icon: React.ElementType;
 }
 
-const SkillsCard = ({ data }:{ data: SkillsCardProps }) => {
+const SkillsCard = ({ data }:{ data: ISkillsCard }) => {
   return (
     <div className=" bg-[#242424] flex flex-col justify-center items-center h-[150px] w-[200px] rounded-md ">
       <data.icon className=" text-[#FD6F00] text-[50px] mb-2" />
