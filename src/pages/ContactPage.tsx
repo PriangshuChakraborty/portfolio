@@ -5,9 +5,12 @@ import { VscGithub } from "react-icons/vsc";
 
 const ContactPage = () => {
   return (
-    <div className=" w-10/12 mx-auto mt-[150px] select-none" id="contact">
+    <div
+      className=" md:w-10/12 w-11/12 mx-auto md:mt-[150px] mt-[60px] select-none"
+      id="contact"
+    >
       <button
-        className=" text-white font-Lato font-bold rounded-[8px] bg-gradient-to-br from-[#FA6E00] to-[#E60026] px-[40px] py-[12px]"
+        className=" text-white text-[14px] md:text-[16px] font-Lato font-bold rounded-[8px] bg-gradient-to-br from-[#FA6E00] to-[#E60026] md:px-[40px] md:py-[12px] px-[16px] py-[8px]"
         onClick={() =>
           window.open(
             "https://mail.google.com/mail/?view=cm&to=cpriangshu@gmail.com",
@@ -55,21 +58,21 @@ const ContactPage = () => {
           <BiLogoGmail className=" text-[#BABABA] text-[27px]" />
         </div>
       </div>
-      <h1 className=" font-Lato font-black text-[50px] text-[#FA6E00] mt-[30px]">
+      <h1 className=" font-Lato font-black md:text-[50px] text-[25px] text-[#FA6E00] mt-[16px] md:mt-[30px]">
         Reach out for
       </h1>
-      <h1 className=" font-Lato font-black text-[50px] text-[#FA6E00]">
+      <h1 className=" font-Lato font-black md:text-[50px] text-[25px] text-[#FA6E00]">
         Something extraordinary
       </h1>
-      <p className=" font-Lato font-bold text-[20px] text-[#5d5d5d] mt-[20px] ">
+      <p className=" font-Lato font-bold md:text-[20px] text-[16px] text-justify text-[#5d5d5d] md:mt-[20px] mt-[12px] ">
         I strive to break creative boundaries, crafting immersive, intuitive,
         and unforgettable interactive experiences that captivate and engage
         users.
       </p>
-      <p className=" font-Lato font-bold text-[20px] text-[#cc6e27] mt-[30px]">
+      <p className=" font-Lato font-bold md:text-[20px] text-[16px] text-[#cc6e27] md:mt-[30px] mt-[16px]">
         cpriangshu@gmail.com
       </p>
-      <p className=" font-Lato font-bold text-[20px] text-[#cc6e27] ">
+      <p className=" font-Lato font-bold md:text-[20px] text-[16px] text-[#cc6e27] ">
         +91-7810808600
       </p>
     </div>

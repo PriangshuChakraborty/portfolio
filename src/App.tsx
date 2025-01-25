@@ -1,5 +1,13 @@
-
-import { AboutPage, ContactPage, ExperiencePage, FooterPage, HomePage, NavbarPage, ProjectPage, SkillsPage } from "./router";
+import {
+  AboutPage,
+  ContactPage,
+  ExperiencePage,
+  FooterPage,
+  HomePage,
+  NavbarPage,
+  ProjectPage,
+  SkillsPage,
+} from "./router";
 
 const App = () => {
   return (

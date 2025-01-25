@@ -3,15 +3,15 @@ import aboutImg from "../assets/images/about.png";
 
 const AboutPage = () => {
   return (
-    <div className="w-10/12 mx-auto mt-[100px] select-none" id="about">
-      <h1 className=" text-center text-[40px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] mb-[100px] ">
+    <div className="md:w-10/12 w-11/12 mx-auto md:mt-[100px] mt-[40px]  select-none" id="about">
+      <h1 className=" text-center md:text-[40px] text-[24px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] md:mb-[100px] mb-[50px]">
         About Me
       </h1>
-      <div className=" flex justify-between items-center">
+      <div className=" md:flex justify-between items-center">
         <motion.img
           src={aboutImg}
           alt="about image"
-          className=" object-contain h-[400px]"
+          className=" object-contain md:h-[400px] h-[250px] mb-[50px] md:mb-0"
           animate={{
             x: [0, -10, 0, 10, 0],
             scale: [1, 1.05, 1], // Scale effect
@@ -23,7 +23,7 @@ const AboutPage = () => {
             style: "spring", // Spring animation
           }}
         />
-        <motion.div className="font-Lato font-medium text-[20px] text-[#959595] text-justify pl-[150px] space-y-[16px]">
+        <motion.div className="font-Lato font-medium md:text-[20px] text-[16px] text-[#959595] text-justify md:pl-[150px] space-y-[16px]">
           <motion.p
             whileHover={{ scale: 1.02 }} // Slight scaling on hover
             transition={{ duration: 0.3 }}

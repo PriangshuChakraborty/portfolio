@@ -8,11 +8,11 @@ const SkillsPage = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true });
   return (
-    <div className=" w-10/12 mx-auto mt-[150px] select-none" id="skill">
-      <h1 className=" text-center text-[40px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] mb-[60px] ">
+    <div className=" md:w-10/12 w-11/12 mx-auto md:mt-[150px] mt-[40px] select-none" id="skill">
+      <h1 className=" text-center md:text-[40px] text-[24px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] md:mb-[60px] mb-[50px] ">
         Skills
       </h1>
-      <div ref={sectionRef} className="grid grid-cols-6 gap-4">
+      <div ref={sectionRef} className="grid md:grid-cols-6 md:gap-4 grid-cols-3 gap-2">
   {skillsData &&
     skillsData.map((data, index) => (
       <motion.div
