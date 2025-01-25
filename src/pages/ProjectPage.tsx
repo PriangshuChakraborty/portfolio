@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const ProjectPage = () => {
   return (
-    <div className=" w-10/12 mx-auto mt-[100px] select-none">
+    <div className=" w-10/12 mx-auto mt-[100px] select-none" id="project">
       <h1 className=" text-center text-[40px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] pb-[120px]">
         Projects
       </h1>

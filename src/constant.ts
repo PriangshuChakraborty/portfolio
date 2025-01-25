@@ -23,12 +23,36 @@ import clactor from "./assets/projectImage/clactor.png";
 import snakyRun from "./assets/projectImage/snakeGame.png";
 
 export const navData = [
-  "Home",
-  "Skills",
-  "About",
-  "Projects",
-  "Experiences",
-  "Contact",
+  // "Home",
+  // "Skills",
+  // "About",
+  // "Projects",
+  // "Experiences",
+  // "Contact",
+  {
+    title: "Home",
+    link: "home",
+  },
+  {
+    title: "Skills",
+    link: "skill",
+  },
+  {
+    title: "About",
+    link: "about",
+  },
+  {
+    title: "Projects",
+    link: "project",
+  },
+  {
+    title: "Experiences",
+    link: "experience",
+  },
+  {
+    title: "Contact",
+    link: "contact",
+  },
 ];
 
 export const skillsData = [

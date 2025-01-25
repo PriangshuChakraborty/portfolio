@@ -10,7 +10,7 @@ const ExperiencePage = () => {
   };
 
   return (
-    <div className="w-10/12 mx-auto mt-[150px] select-none">
+    <div className="w-10/12 mx-auto mt-[150px] select-none" id="experience">
       <h1 className="text-center text-[40px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] mb-[100px]">
         Experiences
       </h1>

@@ -3,7 +3,7 @@ import aboutImg from "../assets/images/about.png";
 
 const AboutPage = () => {
   return (
-    <div className=" w-10/12 mx-auto mt-[100px] select-none">
+    <div className="w-10/12 mx-auto mt-[100px] select-none" id="about">
       <h1 className=" text-center text-[40px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] mb-[100px] ">
         About Me
       </h1>

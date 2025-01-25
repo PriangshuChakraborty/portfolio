@@ -5,7 +5,7 @@ import { VscGithub } from "react-icons/vsc";
 
 const ContactPage = () => {
   return (
-    <div className=" w-10/12 mx-auto mt-[150px] select-none">
+    <div className=" w-10/12 mx-auto mt-[150px] select-none" id="contact">
       <button
         className=" text-white font-Lato font-bold rounded-[8px] bg-gradient-to-br from-[#FA6E00] to-[#E60026] px-[40px] py-[12px]"
         onClick={() =>

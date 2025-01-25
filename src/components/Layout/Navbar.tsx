@@ -1,8 +1,33 @@
+import { useEffect, useState } from "react";
 import { navData } from "../../constant";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 70) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className=" w-full bg-gradient-to-b from-[#0f0f0f] to-[#171717]">
+    <div
+      className={`w-full sticky top-0 left-0 right-0 z-50 ${
+        isScrolled
+          ? "bg-gradient-to-b from-[#0f0f0f]/80 to-[#171717]/80 backdrop-blur-md shadow-md"
+          : "bg-gradient-to-b from-[#0f0f0f] to-[#171717]"
+      }`}
+    >
       <div className=" w-10/12 mx-auto flex justify-between items-center py-5">
         <div className="font-K2D bg-gradient-to-r from-[#FA6E00] to-[#E60026] text-transparent bg-clip-text font-extrabold text-[30px] cursor-pointer">
           PRIANGSHU
@@ -10,12 +35,17 @@ const Navbar = () => {
         <div className="flex space-x-16">
           {navData &&
             navData.map((item, index) => (
-              <div
+              <Link
+                className="text-[20px] font-medium font-Lato text-[#959595] cursor-pointer"
                 key={index}
-                className=" text-[20px] font-medium font-Lato text-[#959595] cursor-pointer"
+                to={item.link} // Match this with the ID of the section
+                spy={true}
+                smooth={true}
+                offset={-80} // Adjust offset if needed
+                duration={800} // Scroll duration in ms
               >
-                {item}
-              </div>
+                {item.title}
+              </Link>
             ))}
         </div>
         <button

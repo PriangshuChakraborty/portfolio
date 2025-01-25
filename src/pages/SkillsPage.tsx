@@ -8,7 +8,7 @@ const SkillsPage = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true });
   return (
-    <div className=" w-10/12 mx-auto mt-[150px] select-none">
+    <div className=" w-10/12 mx-auto mt-[150px] select-none" id="skill">
       <h1 className=" text-center text-[40px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] mb-[60px] ">
         Skills
       </h1>

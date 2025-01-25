@@ -1,8 +1,10 @@
-import { AboutPage, ContactPage, ExperiencePage, FooterPage, HomePage, ProjectPage, SkillsPage } from "./router";
+
+import { AboutPage, ContactPage, ExperiencePage, FooterPage, HomePage, NavbarPage, ProjectPage, SkillsPage } from "./router";
 
 const App = () => {
   return (
-    <div className="w-full h-full bg-[#171717]">
+    <div className="w-full h-full bg-[#171717] relative">
+      <NavbarPage />
       <HomePage />
       <SkillsPage />
       <AboutPage />

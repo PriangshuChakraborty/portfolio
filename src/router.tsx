@@ -6,8 +6,10 @@ import ExperiencePage from "./pages/ExperiencePage";
 import TestimonialPage from "./pages/TestimonialPage";
 import ContactPage from "./pages/ContactPage";
 import FooterPage from "./pages/FooterPage";
+import NavbarPage from "./pages/NavbarPage";
 
 export {
+  NavbarPage,
   HomePage,
   SkillsPage,
   AboutPage,
