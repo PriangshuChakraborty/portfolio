@@ -2,9 +2,21 @@ import { projectData } from "../constant";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const ProjectPage = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }else{
+      setIsMobile(false);
+    }
+  }, []);
+
+  console.log(isMobile);
+
   return (
     <div
       className=" md:w-10/12 w-11/12 mx-auto md:mt-[100px] mt-[40px] select-none"
@@ -70,7 +82,7 @@ const ProjectPage = () => {
                   <motion.div
                     ref={ref}
                     className="flex md:flex-row flex-col justify-between items-center"
-                    initial={{ opacity: 0, x: 50 }}
+                    initial={isMobile?{ opacity: 0, x: 50 }:{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.8 }}
                   >
