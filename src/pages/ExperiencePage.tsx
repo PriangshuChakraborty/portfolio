@@ -11,7 +11,7 @@ const ExperiencePage = () => {
 
   return (
     <div className="md:w-10/12 w-11/12 mx-auto md:mt-[150px] mt-[40px] select-none" id="experience">
-      <h1 className="text-center tmd:ext-[40px] text-[24px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] md:mb-[100px] mb-[50px]">
+      <h1 className="text-center md:text-[40px] text-[24px] font-Lato font-bold text-[#FEFEFE] tracking-[2px] md:mb-[100px] mb-[50px]">
         Experiences
       </h1>
       <motion.div
