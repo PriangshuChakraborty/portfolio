@@ -3,11 +3,17 @@ interface IExperienceCard {
   role: string;
   description: string;
   duration: string;
-} 
+}
 
-const ExperienceCard = ({data}:{data:IExperienceCard}) => {
+import { motion } from "framer-motion";
+
+const ExperienceCard = ({ data }: { data: IExperienceCard }) => {
   return (
-    <div className=" bg-[#242424] flex flex-col justify-center items-center rounded-md px-[30px] py-[15px]">
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.2 }}
+      className=" bg-[#242424] flex flex-col justify-center items-center rounded-md px-[30px] py-[15px]"
+    >
       <h1 className=" font-Lato font-extrabold text-[30px] text-[#FD6F00] ">
         {data.title}
       </h1>
@@ -17,8 +23,10 @@ const ExperienceCard = ({data}:{data:IExperienceCard}) => {
       <p className=" font-Lato font-medium text-[16px] text-[#959595] text-justify">
         {data.description}
       </p>
-      <p className=" font-Lato font-bold text-[18px] text-[#FD6F00] mt-[20px]">{data.duration}</p>
-    </div>
+      <p className=" font-Lato font-bold text-[18px] text-[#FD6F00] mt-[20px]">
+        {data.duration}
+      </p>
+    </motion.div>
   );
 };
 

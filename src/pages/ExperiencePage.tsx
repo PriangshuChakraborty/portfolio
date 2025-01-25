@@ -27,10 +27,10 @@ const ExperiencePage = () => {
           experienceData.map((data, index) => (
             <motion.div
               key={index}
-              variants={cardVariants}
+              variants={cardVariants} // Slight scaling on hover
               transition={{
                 duration: 0.6, // Duration of each animation
-                delay: index * 0.2, // Stagger the animation for each card
+                delay: index * 0.2, // Stagger the animation for each card // Smooth scaling effect
               }}
               className="flex justify-center"
             >
