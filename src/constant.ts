@@ -21,7 +21,6 @@ import bonglang from "./assets/projectImage/bonglang.png";
 import ytAdAvoid from "./assets/projectImage/yt-ad-avoid.png";
 import clactor from "./assets/projectImage/clactor.png";
 import snakyRun from "./assets/projectImage/snakeGame.png";
-import { title } from "framer-motion/client";
 
 export const navData = [
   // "Home",
