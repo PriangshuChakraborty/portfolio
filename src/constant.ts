@@ -1,5 +1,5 @@
 import { FaJs } from "react-icons/fa6";
-import { SiTypescript } from "react-icons/si";
+import { SiNextdotjs, SiSpringboot, SiTypescript } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -21,6 +21,7 @@ import bonglang from "./assets/projectImage/bonglang.png";
 import ytAdAvoid from "./assets/projectImage/yt-ad-avoid.png";
 import clactor from "./assets/projectImage/clactor.png";
 import snakyRun from "./assets/projectImage/snakeGame.png";
+import { title } from "framer-motion/client";
 
 export const navData = [
   // "Home",
@@ -77,6 +78,10 @@ export const skillsData = [
     icon: FaReact,
   },
   {
+    title: "Next.js",
+    icon : SiNextdotjs,
+  },
+  {
     title: "Tailwind",
     icon: SiTailwindcss,
   },
@@ -99,6 +104,10 @@ export const skillsData = [
   {
     title: "MongoDB",
     icon: SiMongodb,
+  },
+  {
+    title : "Spring Boot",
+    icon: SiSpringboot,
   },
   {
     title: "Socket.io",
@@ -189,6 +198,14 @@ export const experienceData = [
     duration: "Sep 2024 - Feb 2025",
     description:
       "As a full-stack developer at Vaibwork, a digital solutions startup, I manage the complete lifecycle of website development, from initial coding to deployment. My portfolio includes projects for organizations like Aetherwave, NCQAC - IIT KGP(Development Phase), and contributions to Tribalwed.",
+
+  },
+  {
+    title: "Directorate of Technical Education, Government of West Bengal",
+    role: "Backend Developer",
+    duration: "Mar 2025 - May 2025",
+    description:
+    "Developed and implemented the complete backend and database for online Letter Tracking System for  Directorate of Technical Education, allowing their officials to submit, track, and monitor government letters."
   },
   {
     title: "Dev Nexus 1.O",
