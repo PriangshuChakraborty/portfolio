@@ -1,5 +1,10 @@
-import { FaJs } from "react-icons/fa6";
-import { SiNextdotjs, SiSpringboot, SiTypescript } from "react-icons/si";
+import { FaCircle, FaGithub, FaJs, FaPython } from "react-icons/fa6";
+import {
+  SiNextdotjs,
+  SiPostman,
+  SiSpringboot,
+  SiTypescript,
+} from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -21,6 +26,7 @@ import bonglang from "./assets/projectImage/bonglang.png";
 import ytAdAvoid from "./assets/projectImage/yt-ad-avoid.png";
 import clactor from "./assets/projectImage/clactor.png";
 import snakyRun from "./assets/projectImage/snakeGame.png";
+import { RiOpenaiFill } from "react-icons/ri";
 
 export const navData = [
   // "Home",
@@ -78,7 +84,7 @@ export const skillsData = [
   },
   {
     title: "Next.js",
-    icon : SiNextdotjs,
+    icon: SiNextdotjs,
   },
   {
     title: "Tailwind",
@@ -105,7 +111,7 @@ export const skillsData = [
     icon: SiMongodb,
   },
   {
-    title : "Spring Boot",
+    title: "Spring Boot",
     icon: SiSpringboot,
   },
   {
@@ -131,6 +137,34 @@ export const skillsData = [
   {
     title: "Git",
     icon: FaGitAlt,
+  },
+  {
+    title: "Github",
+    icon: FaGithub,
+  },
+  {
+    title: "Python",
+    icon: FaPython,
+  },
+  {
+    title: "C#",
+    icon: FaCircle,
+  },
+  {
+    title: "PostMan",
+    icon: SiPostman,
+  },
+  {
+    title: "Transformers",
+    icon: FaCircle,
+  },
+  {
+    title: "Gen AI",
+    icon: RiOpenaiFill,
+  },
+  {
+    title: "Mendix",
+    icon: FaCircle,
   },
 ];
 
@@ -192,37 +226,43 @@ export const projectData = [
 
 export const experienceData = [
   {
+    title: "Siemens Digital Industries Software",
+    role: "Technical Intern - Pune",
+    duration: "Jun 2025 - Present",
+    description:
+      "Working on fine-tuning Large Language Models (LLMs) and Vision Language Models (VLMs) and implementing Retrieval Augmented Generation (RAG) workflows for real world enterprise use cases. Developing React based frontend applications with Siemens IX framework, while gaining hands on experience with Mendix and C# services in .NET, following Agile development practices.",
+  },
+  {
     title: "Directorate of Technical Education, Government of West Bengal",
-    role: "Backend Developer",
+    role: "Backend Developer - Kolkata",
     duration: "Mar 2025 - May 2025",
     description:
-    "Developed and implemented the complete backend and database for online Letter Tracking System for  Directorate of Technical Education, allowing their officials to submit, track, and monitor government letters."
+      "Developed and implemented the complete backend and database for online Letter Tracking System for  Directorate of Technical Education, allowing their officials to submit, track, and monitor government letters.",
   },
   {
     title: "Vaibwork",
-    role: "Fullstack Developer",
+    role: "Fullstack Developer - Remote",
     duration: "Sep 2024 - Feb 2025",
     description:
       "As a full-stack developer at Vaibwork, a digital solutions startup, I manage the complete lifecycle of website development, from initial coding to deployment. My portfolio includes projects for organizations like Aetherwave, NCQAC - IIT KGP(Development Phase), and contributions to Tribalwed.",
-
   },
   {
     title: "Dev Nexus 1.O",
-    role: "Frontend Developer",
+    role: "Frontend Developer - Kolkata",
     duration: "Jun 2024 - Aug 2024",
     description:
       "As a frontend developer at Dev Nexus 1.0, an 8-hour offline hackathon, I collaborated with developers to build a dynamic, user-friendly website, implementing components for seamless navigation and visually appealing interfaces.",
   },
   {
     title: "Enginerds 2k24",
-    role: "Backend Developer",
-    duration: "May 2024 - Aug 2024",
+    role: "Backend Developer - Kolkata",
+    duration: "July 2024 - Aug 2024",
     description:
       "As a backend developer at Enginerds 2k24, our college annual tech fest, I worked on the backend of the official website of Enginerds 2k24, ensuring smooth functionality, efficient data management, and secure user interactions.",
   },
   {
     title: "Web Development Intern",
-    role: "Frontend Intern",
+    role: "Frontend Intern - Remote",
     duration: "Aug 2023 - Sep 2023",
     description:
       "As a frontend intern at a Prodigy InfoTech, LetsGrowMore, Oasis Infobyte, I honed my skills in frontend development, creating responsive, visually appealing websites, and learning to integrate design elements with functionality for a seamless user experience.",
