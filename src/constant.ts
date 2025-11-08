@@ -227,21 +227,21 @@ export const projectData = [
 export const experienceData = [
   {
     title: "Siemens Digital Industries Software",
-    role: "Technical Intern - Pune",
-    duration: "Jun 2025 - Present",
+    role: "Student Intern - Pune",
+    duration: "Jun 2025 - Aug 2025",
     description:
       "Working on fine-tuning Large Language Models (LLMs) and Vision Language Models (VLMs) and implementing Retrieval Augmented Generation (RAG) workflows for real world enterprise use cases. Developing React based frontend applications with Siemens IX framework, while gaining hands on experience with Mendix and C# services in .NET, following Agile development practices.",
   },
   {
     title: "Directorate of Technical Education, Government of West Bengal",
-    role: "Backend Developer - Kolkata",
+    role: "Backend Developer Intern- Kolkata",
     duration: "Mar 2025 - May 2025",
     description:
       "Developed and implemented the complete backend and database for online Letter Tracking System for  Directorate of Technical Education, allowing their officials to submit, track, and monitor government letters.",
   },
   {
     title: "Vaibwork",
-    role: "Fullstack Developer - Remote",
+    role: "Fullstack Developer Intern - Remote",
     duration: "Sep 2024 - Feb 2025",
     description:
       "As a full-stack developer at Vaibwork, a digital solutions startup, I manage the complete lifecycle of website development, from initial coding to deployment. My portfolio includes projects for organizations like Aetherwave, NCQAC - IIT KGP(Development Phase), and contributions to Tribalwed.",
